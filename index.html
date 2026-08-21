@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>She's Onto Something — Letters that reveal what you've built</title>
+<meta name="description" content="Business workups for women entrepreneurs. You built the thing. We see what's next.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💌</text></svg>">
+<style>
+  :root{
+    --cream:#F7F1E8; --cream-2:#EFE6D8; --ink:#211D19; --ink-soft:#6E635A;
+    --blush:#C08A80; --blush-deep:#A96D62; --line:#E2D6C5; --white:#FDFBF7;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--cream); color:var(--ink); font:17px/1.7 "Jost", "Segoe UI", sans-serif; font-weight:300}
+  .serif{font-family:"Playfair Display", Georgia, serif}
+  .script{font-family:"Great Vibes", cursive; font-weight:400}
+  .label{font-size:12px; letter-spacing:.28em; text-transform:uppercase; font-weight:500}
+
+  header{min-height:92vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:48px 24px; position:relative}
+  .roundel{width:110px; height:110px; margin-bottom:34px}
+  h1.script{font-size:clamp(58px,10vw,104px); line-height:1.05; color:var(--ink)}
+  .hero-sub{font-family:"Playfair Display", Georgia, serif; font-size:clamp(19px,3vw,26px); margin-top:18px; letter-spacing:.02em}
+  .hero-tag{margin-top:26px; color:var(--ink-soft)}
+  .hero-tag .label{color:var(--blush-deep)}
+  .cta{display:inline-block; margin-top:42px; background:var(--ink); color:var(--cream); padding:16px 42px; text-decoration:none; letter-spacing:.18em; text-transform:uppercase; font-size:13px; font-weight:500; transition:background .25s}
+  .cta:hover{background:var(--blush-deep)}
+  .down{position:absolute; bottom:26px; color:var(--ink-soft); font-size:22px; text-decoration:none}
+
+  .strip{background:var(--ink); color:var(--cream); text-align:center; padding:34px 24px}
+  .strip .serif{font-size:clamp(17px,2.6vw,22px); letter-spacing:.04em; font-style:italic}
+  .strip .label{color:var(--blush); display:block; margin-top:10px}
+
+  section{padding:90px 24px}
+  .wrap{max-width:900px; margin:0 auto}
+  .narrow{max-width:640px; margin:0 auto}
+  h2{font-family:"Playfair Display", Georgia, serif; font-size:clamp(30px,5vw,42px); line-height:1.15; text-align:center; margin-bottom:18px}
+  .kicker{text-align:center; color:var(--blush-deep); margin-bottom:14px}
+  .center{text-align:center}
+
+  .lettercard{background:var(--white); border:1px solid var(--line); max-width:560px; margin:44px auto 0; padding:56px 48px; text-align:center; box-shadow:0 24px 60px -30px rgba(33,29,25,.25); transform:rotate(-1deg)}
+  .lettercard .serif{font-size:26px; font-style:italic}
+  .lettercard .big{font-size:clamp(24px,4vw,32px); font-style:normal; margin-top:10px}
+  .lettercard .heart{font-size:26px; color:var(--blush); margin-top:22px; display:block}
+
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; margin-top:48px}
+  .card{background:var(--white); border:1px solid var(--line); padding:26px 26px}
+  .card h3{font-size:12.5px; letter-spacing:.22em; text-transform:uppercase; font-weight:500; color:var(--blush-deep); margin-bottom:10px}
+  .card p{font-size:15.5px; color:var(--ink-soft)}
+
+  .creed{max-width:560px; margin:48px auto 0; text-align:center}
+  .creed .pair{margin:26px 0}
+  .creed .dream{font-family:"Playfair Display", Georgia, serif; font-size:24px}
+  .creed .check{color:var(--ink-soft); margin-top:4px}
+
+  .dark{background:var(--ink); color:var(--cream)}
+  .dark h2{color:var(--cream)}
+  .dark .script{color:var(--cream); font-size:clamp(40px,7vw,64px); line-height:1.1}
+  .dark .sub{color:var(--blush); letter-spacing:.24em; text-transform:uppercase; font-size:13px; margin-top:22px}
+  .dark p{color:#CDC3B6}
+
+  .doing{display:flex; flex-wrap:wrap; gap:10px 14px; justify-content:center; margin:34px auto 0; max-width:620px}
+  .doing span{border:1px solid var(--line); border-radius:100px; padding:6px 18px; font-size:14px; color:var(--ink-soft); background:var(--white)}
+  .pull{font-family:"Playfair Display", Georgia, serif; font-size:clamp(24px,4vw,32px); font-style:italic; text-align:center; margin-top:44px}
+  .pull .script{font-style:normal; font-size:clamp(40px,6vw,56px); display:block; margin-top:8px; color:var(--blush-deep)}
+
+  footer{background:var(--ink); color:#A69C8F; text-align:center; padding:54px 24px; font-size:14px}
+  footer .script{color:var(--cream); font-size:38px; display:block; margin-bottom:14px}
+  footer a{color:var(--blush); text-decoration:none; margin:0 10px}
+  footer .fine{margin-top:22px; font-size:12px; color:#7A7166}
+</style>
+</head>
+<body>
+
+<header>
+  <svg class="roundel" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+    <circle cx="60" cy="60" r="56" stroke="#C08A80" stroke-width="1.5"/>
+    <circle cx="60" cy="60" r="50" stroke="#211D19" stroke-width=".75"/>
+    <g stroke="#211D19" stroke-width="1.75" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M38 52 L60 38 L82 52 V82 H38 Z" fill="#FDFBF7"/>
+      <path d="M44 56 h32 v18 h-32 z" fill="#FDFBF7"/>
+      <path d="M38 52 L60 68 L82 52"/>
+      <path d="M38 82 L55 66 M82 82 L65 66"/>
+    </g>
+    <path d="M60 50 c-2.6-3.4-7.8-2-7.8 1.8 c0 2.8 3.4 5 7.8 8.4 c4.4-3.4 7.8-5.6 7.8-8.4 c0-3.8-5.2-5.2-7.8-1.8 z" fill="#C08A80"/>
+  </svg>
+  <h1 class="script">She's Onto Something</h1>
+  <p class="hero-sub">You built the thing. We see what's next.</p>
+  <p class="hero-tag"><span class="label">Business workups for women entrepreneurs</span></p>
+  <a class="cta" href="mailto:hello@shesontosomething.com?subject=I%20want%20a%20letter%20%F0%9F%92%8C&body=Hi!%20Here%27s%20my%20business%3A%20">I want a letter 💌</a>
+  <a class="down" href="#letter">↓</a>
+</header>
+
+<div class="strip">
+  <div class="serif">Letters that reveal what you've built.</div>
+  <span class="label">Clarity · Growth · Magic</span>
+</div>
+
+<section id="letter">
+  <div class="narrow center">
+    <p class="kicker label">It starts with a letter</p>
+    <h2>We find your business. We study it. Then we write you something.</h2>
+    <p style="margin-top:18px; color:var(--ink-soft)">Not a sales pitch. Not a template. A real letter about the business you built — what we see in it, what's working, what you might be too close to see, and where we think it could go. It's free, it's specific to you, and you don't owe us anything.</p>
+  </div>
+  <div class="lettercard">
+    <p class="serif">Dear Founder,</p>
+    <p class="serif big">I think you're onto something.</p>
+    <span class="heart">♡</span>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap center">
+    <p class="script">"Holy cow. Look at what you already have."</p>
+    <p class="sub">That's how every workup starts</p>
+    <p style="max-width:560px; margin:26px auto 0">If the letter resonates, the full Business Workup goes deeper — the whole picture of your business, researched properly, delivered warmly, and ending with the one thing that matters: <em style="color:var(--cream)">start here.</em></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker label">The Business Workup</p>
+    <h2>What you get</h2>
+    <p class="center" style="color:var(--ink-soft)">Every workup is built specifically around your business. Depending on the opportunity, it can include:</p>
+    <div class="grid">
+      <div class="card"><h3>Where You Are</h3><p>A clear assessment of the business today.</p></div>
+      <div class="card"><h3>The Market</h3><p>Who is buying, what they're paying, and how crowded the space really is.</p></div>
+      <div class="card"><h3>The Competition</h3><p>Who's doing it well, who's doing it poorly, and where the gaps are.</p></div>
+      <div class="card"><h3>The Money</h3><p>Pricing, margins, revenue opportunities, and the economics behind the idea.</p></div>
+      <div class="card"><h3>The Blind Spots</h3><p>Things the owner may not be seeing.</p></div>
+      <div class="card"><h3>The Opportunity</h3><p>Where we think the biggest opportunity actually is.</p></div>
+      <div class="card"><h3>The Ideas</h3><p>The ideas worth pursuing — ranked by potential and practicality.</p></div>
+      <div class="card"><h3>The 30/60/90</h3><p>What to do now, what to test next, and what can wait.</p></div>
+      <div class="card"><h3>The "Don't Do This"</h3><p>The expensive distractions.</p></div>
+      <div class="card"><h3>The Bigger Picture</h3><p>If this works, what could it become?</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--cream-2)">
+  <div class="narrow center">
+    <p class="kicker label">Why it works this way</p>
+    <h2>We don't give you 100 things to do.</h2>
+    <p style="margin-top:14px; color:var(--ink-soft)">Because you're already doing everything:</p>
+    <div class="doing">
+      <span>making the product</span><span>answering customers</span><span>posting</span><span>packaging</span><span>shipping</span><span>doing the books</span><span>buying supplies</span><span>raising kids</span><span>working another job</span><span>trying to sleep</span>
+    </div>
+    <p style="margin-top:34px; color:var(--ink-soft)">You don't need another 87-item strategy. You need someone to look at the whole picture and say:</p>
+    <div class="pull">"Here. <span class="script">Start here.</span>"</div>
+  </div>
+</section>
+
+<section>
+  <div class="narrow">
+    <p class="kicker label">The philosophy</p>
+    <h2>Dream big. But check the numbers.</h2>
+    <div class="creed">
+      <div class="pair"><div class="dream">Believe in yourself.</div><div class="check">But know your market.</div></div>
+      <div class="pair"><div class="dream">Try new things.</div><div class="check">But test before you invest.</div></div>
+      <div class="pair"><div class="dream">Build something you're proud of.</div><div class="check">But make sure someone will pay for it.</div></div>
+      <div class="pair"><div class="dream">And most importantly —</div><div class="check">you don't have to know what comes next. That's why we're here.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="narrow center">
+    <p class="script">Want a letter?</p>
+    <p style="margin-top:20px">Tell us about the thing you built — your shop, your page, your side hustle, your almost-a-business. If it catches our heart, you'll get a letter about it. Free. No strings. Just seen.</p>
+    <a class="cta" style="background:var(--blush-deep); color:#fff; margin-top:34px" href="mailto:hello@shesontosomething.com?subject=I%20want%20a%20letter%20%F0%9F%92%8C&body=Hi!%20Here%27s%20my%20business%3A%20">hello@shesontosomething.com</a>
+    <p style="margin-top:22px; font-size:14px">or DM <a href="https://www.instagram.com/shes_onto_something.co/" style="color:var(--blush)">@shes_onto_something.co</a> on Instagram</p>
+  </div>
+</section>
+
+<footer>
+  <span class="script">She's Onto Something</span>
+  <div>
+    <a href="https://www.instagram.com/shes_onto_something.co/">Instagram</a>·
+    <a href="https://www.tiktok.com/@shes.onto.something.co">TikTok</a>·
+    <a href="mailto:hello@shesontosomething.com">Email</a>
+  </div>
+  <p class="fine">© 2026 She's Onto Something · You bring what you've built. We'll help you see what's possible.</p>
+</footer>
+
+</body>
+</html>
